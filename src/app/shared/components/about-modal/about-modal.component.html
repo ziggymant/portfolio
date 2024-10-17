@@ -1,0 +1,54 @@
+<h2 mat-dialog-title>Write about yourself</h2>
+<mat-dialog-content class="mat-typography">
+
+  <mat-tab-group>
+    <mat-tab label="To-Do">
+
+      <b>TODO</b>
+      <ul>
+        <li>Create tabs</li>
+        <li>Make the window wider (ca 82vw)</li>
+        <li>Add info about hobbies</li>
+        <li>
+          <ul>
+            <li>Sport</li>
+            <li>Reading</li>
+            <li>Tinkering/DYI</li>
+            <li>Plants</li>
+            <li>Drawing</li>
+            <li>Investing</li>
+          </ul>
+        </li>
+        <li>Add photos (or GIFs)</li>
+      </ul>
+      <br>
+      <h3>Placeholder</h3>
+      <p>Placeholder</p>
+
+    </mat-tab>
+    <mat-tab label="About me">
+
+      <h3>More info in addition to the front page:</h3>
+
+    </mat-tab>
+    <mat-tab label="Hobbies">
+      <h3>Write about hobbies like:</h3>
+      <ul>
+        <li>Sport</li>
+        <li>Reading</li>
+        <li>Tinkering/DYI</li>
+        <li>Plants</li>
+        <li>Drawing</li>
+        <li>Investing</li>
+      </ul>
+
+    </mat-tab>
+  </mat-tab-group>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Close</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>CLOSE!</button>
+</mat-dialog-actions>
+
+

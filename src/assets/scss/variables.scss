@@ -1,0 +1,24 @@
+
+
+$utilities: (
+  "cursor": (
+    property: cursor,
+    class: cursor,
+    responsive: false,
+    values: pointer,
+  )
+);
+
+// NOTE Color system ----------------------------------------------------------------------------
+
+// $primary: #375F9B;
+$secondary: #8492A6;
+$text-muted: #ACA7AA;
+$info: #375F9B; // #3C78DA;
+$danger: #D0021B;
+$success: #12a366;
+$min-contrast-ratio: 2.5;
+
+
+$btn-close-color: white;
+

@@ -1,0 +1,38 @@
+<article id="training" class="mt-12" #trainingContainer>
+  <div class="flex justify-between items-center align-middle my-4 text-primary text-2xl">
+    <div class="mr-4">
+      <span class="text-tertiary">04.</span>
+      <span class="font-asap">Recent Training</span>
+    </div>
+    <hr class="flex-1 border-gray-400 border-0.5">
+  </div>
+
+  @for (course of courses; track course.name) {
+    <div class="mb-8 zm-training opacity-0">
+      <div class="mb-2">
+        <h2 class="font-semibold text-xl text-primary">
+          <a target="_blank" href="{{ course.url }}">{{ course.name }} 🔗</a>
+        </h2>
+        <div class="text-secondary font-light my-2">{{ course.date }}</div>
+        <div class="text-secondary font-light my-2">Course duration: {{ course.duration }}</div>
+        <div class="text-tertiary font-light my-2">
+          <a target="_blank" href="{{ course.cert_url }}">Certificate-Link 🔗</a>
+        </div>
+      </div>
+      <p>{{ course.description }}</p>
+      @if(course.skills) {
+        <div class="flex flex-wrap child:mr-4 child:mt-4 content-between justify-start font-asap">
+          @for (skill of course.skills; track skill.name) {
+            <div class="inline-flex flex-row items-center p-2 bg-content rounded-md">
+              <div class="mr-2 w-6">
+                <img src="/assets/img/icons/{{ skill.icon }}.svg" alt="{{ skill.name }}">
+              </div>
+              {{ skill.name }}
+            </div>
+          }
+        </div>
+      }
+    </div>
+  }
+
+</article>

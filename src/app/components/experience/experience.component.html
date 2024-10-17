@@ -1,0 +1,35 @@
+<article id="experience" class="mt-12">
+  <div class="flex justify-between items-center align-middle my-4 text-primary text-2xl">
+    <div class="mr-4">
+      <span class="text-tertiary">02.</span>
+      <span class="font-asap">Recent Work Experience</span>
+    </div>
+    <hr class="flex-1 border-gray-400 border-0.5">
+  </div>
+  <div #experienceList class="relative">
+    <div class="border-button border-2 h-timeline absolute left-3.5 top-4"></div>
+
+    @if (experience) {
+      <ul >
+        @for (job of experience; track job.company) {
+          <li class="mb-8 transition-opacity opacity-0">
+            <div class="flex align-middle items-center ml-2">
+              <div class="rounded-full h-4 w-4 bg-button z-10 flex-shrink-0"></div>
+              <div class="ml-4 font-semibold text-xl text-primary font-asap">{{ job.company }}</div>
+            </div>
+
+            <div class="ml-10">
+              <div class="text-primary font-asap opacity-75 italic">{{ job.position }}</div>
+              <div class="text-secondary font-light my-2">
+                {{ job.date }}
+              </div>
+              <p>{{ job.description }}</p>
+            </div>
+          </li>
+        }
+
+      </ul>
+    }
+
+  </div>
+</article>

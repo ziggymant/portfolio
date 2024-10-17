@@ -1,0 +1,33 @@
+<article id="projects" class="mt-12" #projectsContainer>
+  <div class="flex justify-between items-center align-middle my-4 text-primary text-2xl">
+    <div class="mr-4">
+      <span class="text-tertiary">03.</span>
+      <span class="font-asap">Recent Projects</span>
+    </div>
+    <hr class="flex-1 border-gray-400 border-0.5">
+  </div>
+
+  @for (project of projects; track project.name) {
+    <div class="mb-8 zm-project opacity-0">
+      <div class="mb-2">
+        <h2 class="font-semibold text-xl text-primary">{{ project.name }}</h2>
+        <div class="text-secondary font-light my-2">{{ project.date }}</div>
+      </div>
+      <p>{{ project.description }}</p>
+
+      @if(project.skills) {
+        <div class="flex flex-wrap child:mr-4 child:mt-4 content-between justify-start font-asap">
+          @for (skill of project.skills; track skill.name) {
+            <div class="inline-flex flex-row items-center p-2 bg-content rounded-md">
+              <div class="mr-2 w-6">
+                <img src="/assets/img/icons/{{ skill.icon }}.svg" alt="{{ skill.name }}">
+              </div>
+              {{ skill.name }}
+            </div>
+          }
+        </div>
+      }
+    </div>
+  }
+
+</article>

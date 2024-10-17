@@ -1,0 +1,47 @@
+html {
+  font-family: "Source Code Pro", monospace;
+  scroll-behavior: smooth;
+}
+
+.bg-darkblue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 25 44 / var(--tw-bg-opacity));
+}
+
+.toast-header {
+  background-color: transparent;
+}
+.toast-body {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.bg-button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(140 124 108 / var(--tw-bg-opacity));
+}
+
+.border-button {
+  --tw-border-opacity: 1;
+  border-color: rgb(140 124 108 / var(--tw-border-opacity));
+}
+
+.h-timeline {
+  height: calc(100% - 1rem);
+}
+
+.child\:mt-4>* {
+  margin-top: 1rem;
+}
+
+.child\:mr-4>* {
+  margin-right: 1rem;
+}
+
+.fill-content {
+  fill: #f5f5f5;
+}
+
+.bg-content {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
