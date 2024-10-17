@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/makunas",
             "baseHref": "/portfolio/",
             "deployUrl": "/portfolio/",
             "index": "src/index.html",
