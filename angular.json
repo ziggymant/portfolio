@@ -32,6 +32,7 @@
                 "glob": "**/*",
                 "input": "public"
               },
+              "src/assets/img/favicon/favicon.png",
               "src/assets/img/favicon/favicon.ico",
               "src/assets"
             ],
@@ -93,6 +94,7 @@
                 "glob": "**/*",
                 "input": "public"
               },
+              "src/assets/img/favicon/favicon.png",
               "src/assets/img/favicon/favicon.ico",
               "src/assets"
             ],
